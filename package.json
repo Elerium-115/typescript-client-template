@@ -1,0 +1,15 @@
+{
+	"name": "typescript-client-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./src/test-app.ts",
+    "type": "module",
+	"scripts": {
+		"dev": "npm run build && tsc --watch",
+		"build": "npm run build:remove-dist && tsc && npm run build:copy-static",
+        "build:remove-dist": "rm -rf ./dist",
+		"build:copy-static": "cp -r ./static/** ./dist"
+	},
+	"author": "@elerium115",
+	"license": "ISC"
+}

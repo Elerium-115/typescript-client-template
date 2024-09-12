@@ -1,0 +1,3 @@
+class TestModule {};
+
+export {TestModule};
