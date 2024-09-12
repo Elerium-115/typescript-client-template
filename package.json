@@ -6,9 +6,9 @@
     "type": "module",
 	"scripts": {
 		"dev": "npm run build && tsc --watch",
-		"build": "npm run build:remove-dist && tsc && npm run build:copy-static",
+		"build": "npm run build:remove-dist && tsc && npm run build:copy-statics",
         "build:remove-dist": "rm -rf ./dist",
-		"build:copy-static": "cp -r ./static/** ./dist"
+		"build:copy-statics": "cp -r ./src/** ./dist"
 	},
 	"author": "@elerium115",
 	"license": "ISC"
