@@ -1,4 +1,28 @@
+$bodyPadding: 64px;
+
 body {
-    background: #222;
+    background-color: #222;
     color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: $bodyPadding;
+    position: relative;
+
+    &::before {
+        background-image: url('../assets/icons/test-icon.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        top: 0;
+        content: '';
+        display: block;
+        height: $bodyPadding;
+        position: absolute;
+        left: 0;
+        width: $bodyPadding;
+    }
+}
+
+h1 {
+    margin: 0;
 }
