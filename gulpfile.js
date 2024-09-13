@@ -65,7 +65,8 @@ function watchStyles() {
 
 function copyStatics() {
     console.log(`--- [copyStatics]`);
-    return gulp.src(globsStatics)
+    // Disable encoding, to avoid corrupting images during this process
+    return gulp.src(globsStatics, {encoding: false})
         .pipe(gulp.dest(`${outDir}/`));
 }
 
