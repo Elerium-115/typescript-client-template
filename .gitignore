@@ -1,4 +1,5 @@
 _work
+.vscode
 dist
 node_modules
 .env

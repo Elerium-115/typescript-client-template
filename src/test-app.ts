@@ -1,6 +1,6 @@
-import {TestModule} from "./test-module.js";
+import {TestModule} from "./modules/test-module.js";
 
-const test: string = 'zzz';
+const test: string = 'z1';
 console.log(`--- test = ${test}`); //// TEST
 
 const testModule = new TestModule();

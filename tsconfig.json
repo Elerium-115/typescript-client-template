@@ -6,7 +6,7 @@
         "skipLibCheck": true,
         "target": "ES2022",
         "allowJs": true,
-        "resolveJsonModule": true,
+        /* "resolveJsonModule": true, */
         "moduleDetection": "force",
         "isolatedModules": true,
         "verbatimModuleSyntax": true,
@@ -15,11 +15,14 @@
         "noUncheckedIndexedAccess": true,
         "noImplicitOverride": true,
         /* If transpiling with TypeScript: */
-        "module": "NodeNext",
+        /* "ESNext" instead of "NodeNext", for ESM compiling via "gulp-typescript"
+        /* "module": "NodeNext", */
+        "module": "ESNext",
         "outDir": "./dist",
         "sourceMap": true,
+        "removeComments": true,
         /* If your code runs in the DOM: */
-        "lib": ["es2022", "dom", "dom.iterable"]
+        "lib": ["ES2022", "dom", "dom.iterable"]
     },
     "include": ["./src/**/*"]
 }
