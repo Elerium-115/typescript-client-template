@@ -1,4 +1,5 @@
 import {defineConfig} from 'vite';
+import {viteStaticCopy} from 'vite-plugin-static-copy';
 import path from 'path';
 import * as glob from 'glob';
 
@@ -20,5 +21,14 @@ export default defineConfig({
         },
         sourcemap: true,
     },
-    plugins: [],
+    plugins: [
+        viteStaticCopy({
+            targets: [
+                {
+                    src: 'assets/**/*', // copy all files from "src/assets"
+                    dest: 'assets', // output to "dist/assets"
+                },
+            ],
+        }),
+    ],
 });
